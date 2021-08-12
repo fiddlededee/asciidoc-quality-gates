@@ -21,8 +21,10 @@ docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od asciidoctor \
   statqya.adoc -b docbook -v 2> asciidoctor_log
 # end::docbook_asciidoctor[]
 
-echo odt, pdf
+echo odt
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc odt template_s.fodt
+
+echo pdf
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc pdf template_s.fodt
 
 echo html
