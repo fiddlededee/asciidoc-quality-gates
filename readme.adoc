@@ -1,1 +1,11 @@
+image::https://github.com/fiddlededee/asciidoc-quality-gates/workflows/build/badge.svg[link=https://github.com/fiddlededee/asciidoc-quality-gates/actions?query=workflow%3A"build"]
+
+== Автоматический контроль качества документации в Asciidoc или DocOps для Хабра
+
+
 Репозиторий для подготовки статьи https://habr.com/ru/post/571326/[Автоматический контроль качества документации в Asciidoc или DocOps для Хабра]
+
+* https://fiddlededee.github.io/asciidoc-quality-gates/statqya.odt[odt]
+* https://fiddlededee.github.io/asciidoc-quality-gates/statqya.pdf[pdf]
+* https://fiddlededee.github.io/asciidoc-quality-gates/index.html[GithubIO]
+* https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[Формат для Хабра]
