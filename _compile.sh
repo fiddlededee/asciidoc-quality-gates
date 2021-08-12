@@ -22,7 +22,7 @@ docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od asciidoctor \
 # end::docbook_asciidoctor[]
 
 echo odt_test
-docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od-pre -r asciidoctor-mathematical -r asciidoctor-diagram test.adoc -o pre.xml --trace
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od-pre -r asciidoctor-mathematical -r asciidoctor-diagram statqya.adoc -o pre.xml --trace
 echo odt
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc odt template_s.fodt
 
