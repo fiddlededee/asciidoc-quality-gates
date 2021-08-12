@@ -21,6 +21,8 @@ docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od asciidoctor \
   statqya.adoc -b docbook -v 2> asciidoctor_log
 # end::docbook_asciidoctor[]
 
+echo odt_test
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od-pre -r asciidoctor-mathematical -r asciidoctor-diagram test.adoc -o pre.xml --trace
 echo odt
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc odt template_s.fodt
 
