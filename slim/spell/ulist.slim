@@ -1,0 +1,6 @@
+- if title?
+  ="\n" + captioned_title + "\n"
+- items.each_with_index do |item, index|
+  ="\n" + item.text + "\n"
+  - if item.blocks?
+    =item.content
