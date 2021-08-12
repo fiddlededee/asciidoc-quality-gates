@@ -41,3 +41,5 @@ sed  -i 's/\[\(.*\)\]{\.no-spell}/\1/' statqya.md
 echo testing
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od ruby test.rb
 
+mkdir out
+cp {statqya.odt,statqya.pdf,statqya.md,index.html} out

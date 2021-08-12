@@ -10,7 +10,7 @@ endif::[]
 
 Один из шагов выпуска документации -- это применение алгоритмов автоматического контроля качества. Часть подходов будет применима только к документации ИТ-продуктов, часть -- к любым видам документации.
 
-Для примеров использована https://github.com/fiddlededee/asciidoc-quality-gates[сама статья]. По указанной ссылке можно посмотреть данную статью в формате https://fiddlededee.github.io/asciidoc-quality-gates/[html], скачать https://fiddlededee.github.io/asciidoc-quality-gates/statqya.odt[odt] и https://fiddlededee.github.io/asciidoc-quality-gates/statqya.pdf[pdf] версию, а также открыть текст в формате, https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[который принимает Хабр].
+Для примеров использована https://github.com/fiddlededee/asciidoc-quality-gates[сама статья]. В репозитории есть ссылки на автоматически публикуемые варианты статьи в различных форматах, в том числе https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[в формате Хабра].
 
 Обратите внимание, в новой версии редактора Хабр некорректно происходит вставка списков. Лучше использовать старую версию.
 
@@ -268,7 +268,7 @@ include::test.rb[tag=test_fin_describe_end]
 * Предложенная технология универсальна и может быть использована для создания любых документов с высоким уровнем требований по качеству, в том числе, статей на Хабре.
 * Asciidoc дает много возможностей по проверке качества документации. В совокупности они позволяют проверить оформление исходных файлов, качество текста, структуру документов и{nbsp}т.п.
 * Наличие нативного статического анализатора для Asciidoc могло бы значительно упростить процесс задания правил для проверки документации.
-* Результат проверки данной статьи -- [.no-spell]`12 runs, 15 assertions, 0 failures, 0 errors, 0 skips`, а ошибки всё равно есть. https://courseorchestra.github.io/celesta/en/#system_tables[PRs are welcome].
+* Результат проверки данной статьи -- [.no-spell]`12 runs, 17 assertions, 0 failures, 0 errors, 0 skips`, а ошибки всё равно есть. https://courseorchestra.github.io/celesta/en/#system_tables[PRs are welcome].
 
 //== todo
 //
