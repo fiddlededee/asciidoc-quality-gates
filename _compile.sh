@@ -43,12 +43,12 @@ sed  -i 's/^$/\<cut\/\>/g' statqya.md
 sed  -i 's/\[\(.*\)\]{\.no-spell}/\1/' statqya.md
 
 echo testing
-docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od ruby test.rb | tee target/unit_test.log
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od ruby test.rb | tee unit_test.log
 
 mkdir out
 cp {statqya.odt,statqya.pdf,statqya.md,index.html} out
 
-if grep -q "[1-9][0-9]* failures" target/unit_test.log; then
+if grep -q "[1-9][0-9]* failures" unit_test.log; then
     echo test.rb failed
     exit 1
 fi
