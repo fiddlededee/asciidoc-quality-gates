@@ -1,8 +1,8 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-rm target -r
+rm -r target
 mkdir target
-cp {statqya.adoc,template_s.fodt,slim,dict,_compile.sh,statqya.xsd,xml.xsd,test.rb,sidi-i-pishi-pravilqno.png} target -r
+cp -r {statqya.adoc,template_s.fodt,slim,dict,_compile.sh,statqya.xsd,xml.xsd,test.rb,sidi-i-pishi-pravilqno.png} target
 cd target
 echo aspell
 # tag::spell_asciidoctor[]
