@@ -1,4 +1,14 @@
 = Автоматический контроль качества документации в{nbsp}Asciidoc или{nbsp}DocOps для{nbsp}Хабра
+:lang: ru
+:toc-title: Содержание
+:toc: center
+:author: Поташников Н.М.
+:checked: t.me/asciidoctor
+:controlled: Кузнецов М.В.
+:approved: Картышов С.В.
+:docid: https://habr.com/ru/post/571326
+:year: Москва 2021
+:sectnums:
 
 ifdef::backend-fodt[]
 image::sidi-i-pishi-pravilqno.png[]
@@ -10,7 +20,7 @@ endif::[]
 
 Один из шагов выпуска документации -- это применение алгоритмов автоматического контроля качества. Часть подходов будет применима только к документации ИТ-продуктов, часть -- к любым видам документации.
 
-Для примеров использована https://github.com/fiddlededee/asciidoc-quality-gates[сама статья]. В репозитории есть ссылки на автоматически публикуемые варианты статьи в различных форматах, в том числе https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[в формате Хабра].
+Для примеров использована https://github.com/fiddlededee/asciidoc-quality-gates[сама статья]. В репозитории есть ссылки на автоматически публикуемые варианты статьи в различных форматах, в том числе https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[в формате Хабра] и https://fiddlededee.github.io/asciidoc-quality-gates/statqya.pdf[с рамкой ЕСКД].
 
 Обратите внимание, в новой версии редактора Хабр некорректно происходит вставка списков. Лучше использовать старую версию.
 

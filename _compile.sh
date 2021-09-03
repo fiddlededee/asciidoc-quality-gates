@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 rm target -r
 mkdir target
-cp {statqya.adoc,template_s.fodt,slim,dict,_compile.sh,statqya.xsd,xml.xsd,test.rb,sidi-i-pishi-pravilqno.png} target -r
+cp {statqya.adoc,ramka-eskd.fodt,slim,dict,_compile.sh,statqya.xsd,xml.xsd,test.rb,sidi-i-pishi-pravilqno.png} target -r
 cd target
 echo aspell
 # tag::spell_asciidoctor[]
@@ -24,10 +24,13 @@ docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od asciidoctor \
 # echo odt_test
 # docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od-pre -r asciidoctor-mathematical -r asciidoctor-diagram statqya.adoc -o pre.xml --trace
 echo odt
-docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc odt template_s.fodt
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc odt ramka-eskd.fodt
+
+echo docx
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc docx ramka-eskd.fodt
 
 echo pdf
-docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc pdf template_s.fodt
+docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od a-od statqya.adoc pdf ramka-eskd.fodt
 
 echo html
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od asciidoctor \
@@ -46,7 +49,7 @@ echo testing
 docker run --rm -v $(pwd):/documents/ curs/asciidoctor-od ruby test.rb | tee unit_test.log
 
 mkdir out
-cp {statqya.odt,statqya.pdf,statqya.md,index.html} out
+cp {statqya.odt,statqya.pdf,statqya.docx,statqya.md,index.html} out
 
 if grep -q "[1-9][0-9]* failures" unit_test.log; then
     echo test.rb failed
