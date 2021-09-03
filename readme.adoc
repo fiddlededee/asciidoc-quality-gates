@@ -7,5 +7,6 @@ image::https://github.com/fiddlededee/asciidoc-quality-gates/workflows/build/bad
 
 * https://fiddlededee.github.io/asciidoc-quality-gates/statqya.odt[odt]
 * https://fiddlededee.github.io/asciidoc-quality-gates/statqya.pdf[pdf]
+* https://fiddlededee.github.io/asciidoc-quality-gates/statqya.docx[docx] -- с пониманием ограничений
 * https://fiddlededee.github.io/asciidoc-quality-gates/index.html[GithubIO]
 * https://fiddlededee.github.io/asciidoc-quality-gates/statqya.md[Формат для Хабра]
