@@ -14,6 +14,20 @@
                         <xs:sequence>
                             <xs:element type="xs:string" name="title"/>
                             <xs:element type="xs:date" name="date"/>
+                            <xs:element  name="author" minOccurs="1"
+                                         maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:any minOccurs="0"
+                                                processContents="skip"
+                                                maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string"
+                                        name="authorinitials"
+                                        minOccurs="0"
+                                        maxOccurs="1"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
