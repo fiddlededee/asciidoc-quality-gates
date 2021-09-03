@@ -5,7 +5,7 @@
 :author: Поташников Н.М.
 :checked: t.me/asciidoctor
 :controlled: Кузнецов М.В.
-:approved: 
+:approved:
 :docid: https://habr.com/ru/post/571326
 :year: Москва 2021
 :sectnums:
